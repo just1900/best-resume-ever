@@ -70,6 +70,13 @@
             </a>
 
             <a
+              v-if="person.contact.wechat"
+              class="section-link link"
+              :href="person.contact.wechat">
+              <i class="section-link__icon fa fa-wechat"></i>{{ person.contact.wechat }}
+            </a>
+
+            <a
               v-if="person.contact.linkedin"
               class="section-link link"
               :href="contactLinks.linkedin">
