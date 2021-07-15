@@ -115,6 +115,13 @@
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               <span class="section-content__text--light">{{ experience.description }}</span>
+              <ul v-if="experience.list" >
+                  <li v-for="(item, index) in experience.list" :key="index">
+                      <span class="list-item-black">
+                      {{item}}
+                      </span>
+                  </li>
+              </ul>
             </a>
           </div>
         </div>
@@ -203,8 +210,8 @@ export default Vue.component(name, getVueOptions(name));
 @banner-height: 120px;
 @picture-size: 120px;
 @picture-offset: 35px;
-@base-padding: 30px;
-@left-column-width: 240px;
+@base-padding: 25px;
+@left-column-width: 180px;
 
 .link {
   color: inherit;

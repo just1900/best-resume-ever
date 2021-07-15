@@ -2,78 +2,72 @@
 # Any fields left unchanged, please delete so your resume is fully yours!
 
 name:
-  first: John
+  first: 黄
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  last: 章昊
+about: 目前在网易轻舟容器平台团队，主要参与云原生监控，可观测性，容器云平台相关的工作，热爱探索分布式系统和数据库领域的问题，在成为一名Open-Source Enthusiast的路上🤗️
+position: Senior Software Enginner
 
 birth:
-  year: 1990
-  location: New York
+  year: 1996
+  location: Wenzhou, Zhejiang
 
 # you may add more experiences by duplicating the template
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: Netease
+  position: Senior Software Enginner
+  timeperiod: July 2019 - Present, 2yrs 1mo
+  description: 容器云平台，云原生监控，可观测性
+  list:
+    - 负责网易轻舟云原生监控告警系统的建设，基于 Kube-Prometheus-Stack 和 Thanos ，对原有手动运维的 Prometheus 集群和基于 Federation 的架构进行重构，去除不必要的数据分片，Prometheus规则和监控组件，落地后降低轻舟 Monitoring Stack 的内存占用约40%，同时也降低了运维人力成本。
+    - 负责带领团队进行网易轻舟平台监控告警和可观测性的增强，包括对 Kubernetes 核心组件，中间件，平台组件，应用容器的监控告警的产品化开发，关联 Metrics，Logs，Trace，Profiling 可观测性指标，保障平台SLA，提高用户排障效率。
+    - 负责中国建设银行，兴业银行，深交所等多个商业化用户，在 Kubernetes 和主机环境下的监控告警需求的监控适配方案设计与产品化实现。
+    - 作为核心成员参与网易轻舟容器平台的产品化开发，针对严选、云音乐、网易传媒等多个用户生产环境中的场景化需求进行设计与开发，包括 Ceph 存储，基于 OLM 的 Operator 市场，List接口性能优化，HPA，LXCFS 等功能的接入，帮助用户更好地享受云原生红利。
+    - 为了解决容器平台历史遗留问题，更好融入云原生生态，参与开源容器平台(kubecube.io)的从0到1的设计与开发，包括认证鉴权体系，云原生监控告警功能的重新设计与实现。
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Netease
+  position: Summer Intern
+  timeperiod: June 2018 - September 2018, 3mos
+  description: 基于 Kubernetes 的公有云容器平台产品开发
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: 硕士学位
+  school: 武汉大学
+  timeperiod: September 2017 - July 2019
+  description: 软件工程专业，研究方向为大数据处理，流式计算。
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
-
+- degree: 学士学位
+  school: 武汉大学
+  timeperiod: September 2013 - July 2017
+  description: 软件工程专业
 # skill level goes from 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: Kubernetes
+  # level: 99
+- name: Prometheus
+  # level: 95
+- name: Observability
+  # level: 97
+- name: Distributed System
+  # level: 93
+- name: Golang
+  # level: 90
+- name: Java
+  # level: 90
+# knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
+#   (English and Klingon).
 
-projects:
-- name: best-resume-ever
-  platform: Vue
-  timeperiod: February 2016
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+# projects:
+# - name: best-resume-ever
+#   platform: Vue
+#   timeperiod: February 2016
+#   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+#   url: https://github.com/salomonelli/best-resume-ever
 
 # optional, not all resume templates have hobbies included
 hobbies:
-- name: Video Games
+- name:
   iconClass: fa fa-gamepad
   url: https://example.com
 
@@ -82,17 +76,19 @@ hobbies:
   url: https://example.com
 
 contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Prometehus-Operator
+  # description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+  url: https://github.com/prometheus-operator/prometheus-operator
+- name: HNC(Hierachy-Namespaces)
+  url: https://github.com/kubernetes-sigs/hierarchical-namespaces
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: legendj228@gmail.com
+  phone: 15994285284
+  street: Hangzhou, Zhejiang
+  city: Hangzhou, Zhejiang
+  # website: johndoe.com
+  github: just1900
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
-lang: en
+lang: cn
 `
