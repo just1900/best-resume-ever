@@ -69,12 +69,10 @@
               <i class="section-link__icon fa fa-globe"></i>{{ person.contact.website }}
             </a>
 
-            <a
-              v-if="person.contact.wechat"
-              class="section-link link"
-              :href="person.contact.wechat">
+
+            <div class="section-link">
               <i class="section-link__icon fa fa-wechat"></i>{{ person.contact.wechat }}
-            </a>
+            </div>
 
             <a
               v-if="person.contact.linkedin"
@@ -217,8 +215,8 @@ export default Vue.component(name, getVueOptions(name));
 @banner-height: 120px;
 @picture-size: 120px;
 @picture-offset: 35px;
-@base-padding: 25px;
-@left-column-width: 180px;
+@base-padding: 24px;
+@left-column-width: 183px;
 
 .link {
   color: inherit;
@@ -333,8 +331,11 @@ export default Vue.component(name, getVueOptions(name));
   font-size: 14px;
 
   &__item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 5px;
+    text-decoration: none;
+    color: #00104f;
   }
 
   &__header {
@@ -351,10 +352,10 @@ export default Vue.component(name, getVueOptions(name));
   &__plain,
   &__text {
     display: block;
-    font-size: 12px;
+    font-size: 14gpx;
 
     &--light {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -367,6 +368,7 @@ export default Vue.component(name, getVueOptions(name));
     flex: 1 1 0;
     margin-bottom: 5px;
     padding-right: 5px;
+    color: #00104f;
   }
 
   &--plain {
@@ -391,5 +393,10 @@ export default Vue.component(name, getVueOptions(name));
   color: white;
   margin-top: 5px;
   padding: 5px;
+}
+
+ul li {
+    font-size:13px;
+    margin-left:-20px;
 }
 </style>
