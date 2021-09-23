@@ -18,7 +18,7 @@ experience:
 - company: Netease
   position: 高级软件工程师
   timeperiod: July 2019 - Present, 2yrs 1mo
-  description: 容器云平台开发，云原生监控，可观测性
+  description: 云原生监控，容器云平台开发，可观测性
   list:
     - 主导网易轻舟多 Kubernetes 集群监控基础设施的建设，对原有手动运维的 Prometheus 集群和基于 Federation 的架构进行重构并推动全平台改造，使用 Prometheus-operator 实现关注点分离，划清平台与业务边界，简化部署配置，降低运维人力成本；使用 Kube-Prometheus-Stack 统一K8s监控基础设施，去除不必要的 Prometheus 分片和recording规则，完成架构瘦身，落地后降低轻舟 Monitoring Stack 的内存占用约40%；使用 Thanos ，实现多集群监控的全局视图，解决 Prometheus 高可用问题。
     - 负责网易轻舟平台监控告警和可观测性的增强，包括对 Kubernetes 核心组件、平台组件、应用容器与节点资源的监控可视化与自定义告警功能的开发，关联 Metrics、Logs、Trace、Profiling 可观测性指标，保障平台与应用SLA，提高用户排障效率。
